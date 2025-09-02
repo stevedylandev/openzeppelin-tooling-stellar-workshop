@@ -21,7 +21,7 @@ data/**/*.txt
 data/**/*.json
 
 # Ignore actual config files but not examples
-config/**/*.json
+# config/**/*.json
 config/**/*.sh
 !examples/config/**/*.json
 

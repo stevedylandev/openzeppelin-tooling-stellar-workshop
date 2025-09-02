@@ -1,0 +1,37 @@
+{
+	"name": "Increment Function Monitor",
+	"networks": ["stellar_testnet"],
+	"paused": false,
+	"addresses": [
+		{
+			"address": "CAZOV6PSU6XHRSQPZBTNUD6TP5RLJWVYIADLD4RAXPI7WDETACLAMNWM",
+			"contract_spec": [
+				{
+					"function_v0": {
+						"doc": "Increment increments an internal counter, and returns the value.",
+						"name": "increment",
+						"inputs": [],
+						"outputs": ["u32"]
+					}
+				}
+			]
+		}
+	],
+	"match_conditions": {
+		"functions": [
+			{
+				"signature": "increment()",
+				"expression": null
+			}
+		],
+		"events": [],
+		"transactions": [
+			{
+				"status": "Success",
+				"expression": null
+			}
+		]
+	},
+	"trigger_conditions": [],
+	"triggers": ["increment_slack_notification"]
+}

@@ -1,0 +1,16 @@
+{
+	"increment_slack_notification": {
+		"name": "Increment Function Notification",
+		"trigger_type": "webhook",
+		"config": {
+			"slack_url": {
+				"type": "plain",
+				"value": "https://webhook.site/"
+			},
+			"message": {
+				"title": "Increment Function Called",
+				"body": "The increment function was called in transaction: https://stellar.expert/explorer/testnet/tx/${transaction.hash}."
+			}
+		}
+	}
+}
