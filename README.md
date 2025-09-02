@@ -12,17 +12,6 @@ In this repo you'll find all you need to start testing out and using OpenZeppeli
 
 ## Monitor
 
-High level overview
-
-### 1. Follow [Quickstart Guide]() to setup Monitor locally
-
-### 2. Adjust `configs`
-
-#### `networks`
-#### `filters`
-#### `triggers`
-#### `monitors`
-
 ## Relayer
 
 ## Questions
