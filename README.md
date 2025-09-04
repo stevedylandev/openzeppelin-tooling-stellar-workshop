@@ -1,17 +1,14 @@
 # OpenZeppelin Monitor and Relayer Workshop for Stellar
 
-In this repo you'll find all you need to start testing out and using OpenZeppelin Monitors and Relayers on Stellar.
+This repo contains the following:
+- [slides.md](slides.md) - Slides used in the workshop
+- `openzeppelin-monitor` & `openzeppelin-relayer` - Repos used in the workshop demos
 
-> [!NOTE]
-> While you can try to clone and use this repo, it is highly recommmend you follow the Monitor Quickstart and Relayer Quickstart separately. This repo just serves as a reference of clear configs for Stellar.
+Slides can be viewed in any Markdown reader or through [Presenterm](https://github.com/mfontanini/presenterm)
 
-## Requirements
+## Resources
 
-- Rust
-- Docker
-
-## Monitor
-
-## Relayer
-
-## Questions
+- Monitor Docs - [](https://docs.openzeppelin.com/monitor/)
+- Monitor Repo - [](https://github.com/OpenZeppelin/openzeppelin-monitor)
+- Relayer Docs - [](https://docs.openzeppelin.com/relayer/)
+- Relayer Repo - [](https://github.com/OpenZeppelin/openzeppelin-relayer)

@@ -1,5 +1,5 @@
 {
-	"increment_slack_notification": {
+	"increment_notification": {
 		"name": "Increment Function Notification",
 		"trigger_type": "webhook",
 		"config": {
