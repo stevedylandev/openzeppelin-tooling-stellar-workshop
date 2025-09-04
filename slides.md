@@ -1,13 +1,12 @@
 ---
+title: "**OpenZeppelin Monitors and Relayers on Stellar**"
 author: Steve Simkins
-title: "**OpenZeppelin Monitor and Relayer on Stellar**"
-date: 2025-09-04
 theme:
   name: terminal-dark
 ---
 
 Hey there! 👋 My name is Steve
-===
+---
 <!-- list_item_newlines: 2 -->
 
 * Developer Relations at OpenZeppelin
@@ -17,7 +16,7 @@ Hey there! 👋 My name is Steve
 <!-- end_slide -->
 
 What is OpenZeppelin?
-===
+---
 
 <!-- list_item_newlines: 2 -->
 
@@ -27,15 +26,22 @@ What is OpenZeppelin?
 
 <!-- end_slide -->
 
-Monitor and Relayer
+Monitors and Relayers
 ===
 
 <!-- list_item_newlines: 2 -->
 
 * They do exactly what you would think: monitor and relay transactions
-* Backend services
-* Monitor watch and trigger alerts or actions 
-* Relayer run in a server and relay transactions
+* Open source backend services
+* Monitors
+  - Watch specific contracts
+  - Match conditions for particular events or functions
+  - Send notifications or act based on matches
+* Relayers
+  - Server side accounts that take actions
+  - Scoped to your standards
+  - Compatible with enterprise key management services
+  - Can be customized with plugins to interface into other apps
 
 <!-- end_slide -->
 
@@ -69,8 +75,8 @@ Monitors
 <!-- list_item_newlines: 2 -->
 
 - `networks` - Configure chain network and how to listen to it
-- `filters` - Match filter scripts to determine what blocks get processed
 - `monitors` - Configure what to listen to and what to do when a condition is met
+- `filters` - Optional filter scripts to determine which condition matches fire a trigger
 - `triggers` - Actions you can take based on an event from the monitor
 
 <!-- end_slide -->
@@ -80,8 +86,8 @@ Monitors
 <!-- list_item_newlines: 2 -->
 
 - Network setup for stellar testnet
-- Filters set to default for stellar
-- Monitor setup to listen to counter contract and trigger webhook notification when counter goes up
+- Monitor setup to listen to counter contract
+- Trigger webhook notification when counter goes up
 
 <!-- end_slide -->
 
@@ -102,6 +108,9 @@ cargo run --example create_key -- \
   --filename local-signer.json
 ```
   - Generate two UUIDs for the `API_KEY` and `WEBHOOK_SIGNING_KEY`
+```bash
+cargo run --example generate_uuid
+```
   - Update `.env` with the two UUIDs and the password for the signer generated
   - Update the `config/config.json` file with a webhook url
   - Run the docker command to start `docker compose -f docker-compose.yaml up`
@@ -113,7 +122,7 @@ cargo run --example create_key -- \
 <!-- list_item_newlines: 2 -->
 
 - Use API to list our Relayers
-- Get balane of a Relayer
+- Get balance of a Relayer
 - Execute a transaction with a Relayer
 
 <!-- end_slide -->
@@ -145,5 +154,5 @@ Resources
 <!-- end_slide -->
 
 <!-- alignment: center -->
-<!-- new_lines: 10 -->
-Thank you!
+<!-- jump_to_middle -->
+**Thank you!**
