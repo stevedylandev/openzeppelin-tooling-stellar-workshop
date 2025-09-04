@@ -8,7 +8,7 @@ Slides can be viewed in any Markdown reader or through [Presenterm](https://gith
 
 ## Resources
 
-- Monitor Docs - [](https://docs.openzeppelin.com/monitor/)
-- Monitor Repo - [](https://github.com/OpenZeppelin/openzeppelin-monitor)
-- Relayer Docs - [](https://docs.openzeppelin.com/relayer/)
-- Relayer Repo - [](https://github.com/OpenZeppelin/openzeppelin-relayer)
+- [Monitor Docs](https://docs.openzeppelin.com/monitor/)
+- [Monitor Repo](https://github.com/OpenZeppelin/openzeppelin-monitor)
+- [Relayer Docs](https://docs.openzeppelin.com/relayer/)
+- [Relayer Repo](https://github.com/OpenZeppelin/openzeppelin-relayer)
